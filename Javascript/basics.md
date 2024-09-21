@@ -1,3 +1,24 @@
+# JavaScript Closures: House and Ball Example
+
+A **closure** allows a function to "remember" variables from its outer scope even after the outer function has returned.
+
+### House and Ball Analogy
+- **House (Outer Function):** Creates a variable (ball).
+- **Person (Inner Function):** Captures the ball and can play with it, even after the house is closed.
+
+### Example
+
+```javascript
+function house() {
+    let ball = 10;  // Outer function (house) creates a ball
+    return function() {  // Inner function (person) captures the ball
+        console.log(ball);  // The person can still use the ball
+    };
+}
+
+const person = house();  // Outer function returns the inner function
+person();  // Even after the house is closed, the person can play with the ball (prints 10)
+```
 # shallow vs deep copy
 
 In JavaScript, when you assign an object to a new variable, you are creating a reference to the original object rather than a copy.
