@@ -87,13 +87,14 @@
 
 ## 7. 🔐 **Assertions**
 
-| **Pattern**        | **Explanation**              | **Real-World Example**                                                                                          |
-|--------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| `(?=...)`          | Positive lookahead           | `apple(?=\sjuice)` matches "apple" only if it's followed by **" juice"**. ✔️|
-| `(?!...)`          | Negative lookahead           | `apple(?!\spie)` matches "apple" only if **not** followed by "pie". ✔️|
-| `(?<=...)`         | Positive lookbehind          | `(?<=\$)\d+` matches **digits** preceded by a dollar sign ($). ✔️|
-| `(?<!...)`         | Negative lookbehind          | `(?<!@)\w+` matches words not preceded by "@". ✔️|
+# 📝 **Regex Lookahead and Lookbehind Examples**
 
+| **Pattern**      | **Type**               | **Explanation**                                                             | **Real-World Example**                                                                                          |
+|------------------|-----------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| `(?=...)`        | Positive Lookahead     | Matches a pattern only if it is followed by another specified pattern.     | `apple(?=\sjuice)` matches "apple" only if it's followed by **" juice"**. ✔️                                   |
+| `(?!...)`        | Negative Lookahead     | Matches a pattern only if it is **not** followed by another specified pattern.| `apple(?!\spie)` matches "apple" only if it is **not** followed by "pie". ✔️                                   |
+| `(?<=...)`       | Positive Lookbehind    | Matches a pattern only if it is preceded by another specified pattern.     | `(?<=\$)\d+` matches digits that are preceded by a dollar sign ($). In the text "Prices: $100, $250, $75", it matches `100`, `250`, and `75`. ✔️                   |
+| `(?<!...)`       | Negative Lookbehind    | Matches a pattern only if it is **not** preceded by another specified pattern.| `(?<!@)\w+` matches words that are **not** preceded by an at symbol (@). In the text "Usernames: alice, `bob@example.com`, charlie", it matches `alice` and `charlie`, but ignores `bob`. ✔️ |
 ---
 
 ## 8. 🌐 **Common Regex Patterns**
