@@ -148,7 +148,7 @@
 
 | **Pattern**           | **Explanation** | **Real-World Example** |
 |-----------------------|-----------------|------------------------|
-| `(?(id)yes|no)`      | Matches a pattern based on whether a capturing group has been matched. | In a configuration file parser, `(?(1)yes|no)` checks if group 1 matched and adjusts behavior accordingly, such as enabling or disabling features. |
+| `(?(id)yes\|no)`      | Matches a pattern based on whether a capturing group has been matched. | In a configuration file parser, `(?(1)yes\|no)` checks if group 1 matched and adjusts behavior accordingly, such as enabling or disabling features. |
 
 ---
 
