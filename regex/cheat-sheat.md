@@ -77,7 +77,7 @@
 | **Pattern**        | **Explanation**              | **Real-World Example**                                                                                          |
 |--------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | `.`                | Any character except newline  | `a.b` matches "aXb" or "a1b" (any character between a and b). ✔️|
-| `(a|b)`            | Matches "a" or "b"            | `I like (cats|dogs)` matches either "I like cats" or "I like dogs". ✔️|
+| `(a\|b)`            | Matches "a" or "b"            | I like `(cats\|dogs)` matches either "I like `cats`" or "I like `dogs`". ✔️|
 | `(...)`            | Groups part of a pattern      | `(abc){3}` matches "abcabcabc". ✔️|
 | `[^abc]`           | Not "a", "b", or "c"          | `[^abc]` matches any character **except** "a", "b", or "c". ✔️|
 | `[a-z]`            | Lowercase letters a to z      | `[a-z]+` matches all **lowercase letters**. ✔️|
